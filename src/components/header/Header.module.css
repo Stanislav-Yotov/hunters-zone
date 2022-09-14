@@ -1,7 +1,8 @@
 @import url(//db.onlinewebfonts.com/c/6f654b0b7ea8cedb893c861b67ad763a?family=Algerian);
 
 .header {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 0;
     padding: 0;
