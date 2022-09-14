@@ -1,0 +1,51 @@
+@import url(//db.onlinewebfonts.com/c/6f654b0b7ea8cedb893c861b67ad763a?family=Algerian);
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent
+}
+
+.header h1 {
+    color: #000000;
+    font-size: 5vw;;
+    font-family: 'Algerian';
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff, 
+                 0 0 20px red, 
+                 0 0 30px orange, 
+                 0 0 40px orange, 
+                 0 0 55px orange, 
+                 0 0 70px red;
+}
+
+.span {
+    color: #eb7434;
+}
+
+
+.pulsate {
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.1;
+    color: white;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
