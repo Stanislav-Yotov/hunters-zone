@@ -1,0 +1,17 @@
+.tfbutton {
+    display: flex;
+    margin: -9% 0 0 67%;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    border: solid 1px orange;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.tfbutton:hover {
+    color: black;
+    background: orange;
+}
