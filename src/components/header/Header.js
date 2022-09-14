@@ -8,7 +8,7 @@ function Header(props) {
             </h1>
             <h2 className={styles.headerSec}>
                 Online school <span className={styles.span}>for</span> web development
-                <span className={styles.span}>and</span> web design
+                <span className={styles.span}> and</span> web design
             </h2>
         </div>
     );
