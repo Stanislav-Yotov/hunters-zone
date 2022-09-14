@@ -1,28 +1,50 @@
 @import url(//db.onlinewebfonts.com/c/6f654b0b7ea8cedb893c861b67ad763a?family=Algerian);
 
 .header {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
-    background: transparent
+    
 }
 
 .header h1 {
+
+    display: inline-block;
     color: #000000;
-    font-size: 5vw;;
+    font-size: 5vw;
     font-family: 'Algerian';
     text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff, 
-                 0 0 20px red, 
-                 0 0 30px orange, 
-                 0 0 40px orange, 
-                 0 0 55px orange, 
-                 0 0 70px red;
+        0 0 10px #fff,
+        0 0 20px red,
+        0 0 30px orange,
+        0 0 40px orange,
+        0 0 55px orange,
+        0 0 70px red;
 }
+
+.headerSec {
+    display: block;
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Algerian';
+    font-size: 2.3vw;
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+/* .header h2 {
+    
+    display: inline-block;
+    color:#FFFFFF;
+    font-family: 'Algerian';
+	font-size: 2.5vw;
+    margin: 20% 0 0 0;
+    z-index: 1;
+} */
 
 .span {
     color: #eb7434;
@@ -34,6 +56,7 @@
     animation-iteration-count: infinite;
     opacity: 0.1;
     color: white;
+    margin-bottom: 3%;
 }
 
 @keyframes pulsate {
