@@ -3,29 +3,37 @@ import styles from './Dropdowns.module.css';
 
 function Dropdowns(props) {
 
-    // <form method="post" action="">
-    // 			<div class="dropdown">
-    // 				<button class="dropbtn"><i class="fa fa-sign-in"></i> Login</button>
-    // 				<div class="dropdown-content">
-    // 					<button type="button" id="qr-auth" style="cursor:pointer" onclick="window.location.href='./forms/login_form.php'" value="qrCode">2FA with QR code</button>
-    // 					<button type="button" id="sms-auth" style="cursor:pointer" onclick="window.location.href='./forms/login_form_sms.php'" value="smsCode">2FA with SMS code</button>
-    // 				</div>
-    // 			</div>
-    // 		</form>
-
     return (
-        <div className={styles.container}>
-            <div className={styles.dropdown}>
-                <a><i className='fa fa-user-plus'>Sign up</i></a>
-            </div>
-            <div className={styles.dropdown}>
-                <a><i className='fa fa-sign-in'>Login</i></a>
-                <div className={styles['dropdown-content']}>
-                    <button type="button" id="qr-auth" style={{ cursor: 'pointer' }} onclick="window.location.href='./forms/login_form.php'" value="qrCode">2FA with QR code</button>
-                    <button type="button" id="sms-auth" style={{ cursor: 'pointer' }} onclick="window.location.href='./forms/login_form_sms.php'" value="smsCode">2FA with SMS code</button>
+        <>
+            <div className={styles.container}>
+                <div className={styles.dropdown}>
+                    <a><i className='fa fa-user-plus'> Sign up</i></a>
+                </div>
+                <div className={styles.dropdown}>
+                    <a><i className='fa fa-sign-in'> Login</i></a>
+                    <div className={styles['dropdown-content']}>
+                        <button type="button" id="qr-auth" style={{ cursor: 'pointer' }} value="qrCode">2FA with QR code</button>
+                        <button type="button" id="sms-auth" style={{ cursor: 'pointer' }} value="smsCode">2FA with SMS code</button>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <a><i className="fa fa-book"></i> Articles</a>
+                    <div className={styles['dropdown-content']}>
+                        <button type="button" style={{ cursor: 'pointer' }} value="HTML">HTML</button>
+                        <button type="button" style={{ cursor: 'pointer' }} value="CSS">CSS</button>
+                        <button type="button" style={{ cursor: 'pointer' }} value="JS">JS</button>
+                        <button type="button" style={{ cursor: 'pointer' }} value="PHP">PHP</button>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <a ><i className="fa fa-pencil"></i> Contact</a>
+                    <div className={styles['dropdown-content']}>
+                        <button type="button" style={{ cursor: 'pointer' }} value="Feedback">Feedback</button>
+                        <button type="button" style={{ cursor: 'pointer' }} value="Forum">Forum</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 
 }
