@@ -27,6 +27,7 @@
     height: 100%;
     width: 100%;
     border:0;
+    transition-timing-function: ease-in-out 4s;
 }
 
 .slide-arrow-left{

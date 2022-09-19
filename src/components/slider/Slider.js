@@ -16,7 +16,7 @@ function Slider() {
     return (
         <div className={styles.videoSlider} id='slider-video'>
             <div className={styles.slide}>
-                <iframe className={styles.video} id="ytplayer" type="text/html" width="640" height="360" src={iframe} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loop={true} autoPlay={true} allowFullScreen></iframe>
+                <iframe className={styles.video} id="ytplayer" type="text/html"  src={iframe} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loop={true} autoPlay={true} allowFullScreen></iframe>
             </div>
             <div className={styles['slide-arrow']}>
                 <div className={styles['slide-arrow-left']} onClick={frameHandler} />

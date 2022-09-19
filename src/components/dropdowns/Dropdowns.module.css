@@ -1,8 +1,7 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2em 2em 0 2em;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16%;
+    margin-left: 30%;
 }
 
 .dropdown {
@@ -31,14 +30,15 @@
 }
 
 .dropdown-content button {
+   
     width: fit-content;
+    position: relative;
     min-width: 100px;
     min-height: 37px;
     background-color: black;
     border: 1px solid orange;
     border-radius: 5px;
     color: white;
-    /* font-size: 12px; */
     font-weight: bold;
     padding: 5px 15px;
     cursor: pointer;
@@ -51,7 +51,7 @@
 }
 
 .dropdown-content button:hover {
-    min-width: 80px;
+    min-width: 100px;
     min-height: 37px;
     background-color: orange;
     border: 1px solid black;
