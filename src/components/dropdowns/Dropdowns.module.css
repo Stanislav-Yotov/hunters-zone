@@ -27,7 +27,7 @@
     display: none;
     position: absolute;
     box-shadow: 20px 40px 10px 10px rgba(255, 255, 255, 0.9);
-
+    z-index: 1;
 }
 
 .dropdown-content button {
@@ -42,7 +42,7 @@
     font-weight: bold;
     padding: 5px 15px;
     cursor: pointer;
-    
+    z-index: 1;
     
 }
 

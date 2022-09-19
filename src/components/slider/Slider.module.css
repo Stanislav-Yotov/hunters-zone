@@ -28,3 +28,65 @@
     width: 100%;
     border:0;
 }
+
+.slide-arrow-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45%;
+    width: 15%;
+    cursor: pointer;
+    opacity: .2;
+}
+
+.slide-arrow-left:hover {
+    opacity: 1;
+}
+
+.slide-arrow-left:after{
+    content: "\003c";
+    text-align: center;
+    display: block;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 3em;
+    color: white;
+   
+ }
+
+ .slide-arrow-right{
+    content: "\003e";
+    text-align: center;
+    display: block;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    right: 0;
+    cursor: pointer;
+    opacity: .2;
+    color: white;
+    
+ }
+
+ .slide-arrow-right:after{
+    content: "\003e";
+    text-align: center;
+    
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    left: auto;
+    right: 0;
+    font-size: 3em;
+    color: white;
+ }
+
+ .slide-arrow-right:hover{
+    opacity: 1;
+ }
+ 
