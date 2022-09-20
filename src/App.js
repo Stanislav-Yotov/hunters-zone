@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import SearchBar from './components/search/SearchBar';
 import Dropdowns from './components/dropdowns/Dropdowns';
 import Slider from './components/slider/Slider';
+import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <SearchBar />
       <Dropdowns />
       <Slider />
+      <Sidebar />
     </div>
   );
 }
