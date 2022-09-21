@@ -5,6 +5,7 @@ import Dropdowns from './components/dropdowns/Dropdowns';
 import Slider from './components/slider/Slider';
 import Sidebar from './components/sidebar/Sidebar';
 import FindLocation from './components/sidebar/FindLocation';
+import SidebarRight from './components/sidebar/SidebarRight';
 import { useState } from 'react';
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       <Dropdowns />
       <Slider />
       <Sidebar onClick={clickHandler} />
-      {clicked && <FindLocation />} 
+      {clicked && <FindLocation />}
+      <SidebarRight /> 
     </div>
   );
 }
