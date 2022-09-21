@@ -3,8 +3,9 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 
 const containerStyle = {
-    width: '400px',
-    height: '400px'
+    width: '100%',
+    height: '600px',
+    alignItems: 'center'
 };
 
 
@@ -41,7 +42,7 @@ function FindLocation() {
         setMap(null)
     }, [])
 
-    return isLoaded ? (
+    return isLoaded, lat !=null, lng !=null ? (
         <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}

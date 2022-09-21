@@ -5,16 +5,28 @@ import Dropdowns from './components/dropdowns/Dropdowns';
 import Slider from './components/slider/Slider';
 import Sidebar from './components/sidebar/Sidebar';
 import FindLocation from './components/sidebar/FindLocation';
+import { useState } from 'react';
 
 function App() {
+
+  const [clicked, setClicked] = useState(false);
+  function clickHandler() {
+    if(!clicked) {
+      setClicked(true);
+    } else {
+      setClicked(false);
+    }
+    console.log(clicked);
+  }
+
   return (
     <div className={styles.container}>
       <Header />
       <SearchBar />
       <Dropdowns />
       <Slider />
-      <Sidebar />
-      <FindLocation />
+      <Sidebar onClick={clickHandler} />
+      {clicked && <FindLocation />} 
     </div>
   );
 }
