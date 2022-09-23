@@ -51,6 +51,11 @@
 	border-radius: 25px;
 }
 
+.social .facebook:hover {
+    color: #167feb;
+    background-color: white;
+}
+
 .social .twitter {
     background-color: #00acee;
     color: white;
@@ -61,6 +66,11 @@
     margin-top: 5px;
 }
 
+.social .twitter:hover {
+    color:  #00acee;
+    background-color: white;
+} 
+
 .social .linkedin {
     background-color: #0e76a8;
     color: white;
@@ -69,6 +79,11 @@
     height: 2em;
 	border-radius: 25px;
     margin-top: 5px;
+}
+
+.social .linkedin:hover {
+    color: #0e76a8;
+    background-color: white;
 }
 
 .sidebar-right-badge {
@@ -83,7 +98,11 @@
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 350px) {
+.sidebar-right-badge:hover {
+    width: 2.5%;
+}
+
+@media screen and (max-width: 450px) {
     .sidebar {
        margin-top: 8rem;
        background: none;
@@ -109,7 +128,7 @@
     }
 
     .social .sidebar-right-badge {
-        display: block;
+        display: none;
         margin-top: 20%;
         margin-left: 60%;
         width: 24%;
