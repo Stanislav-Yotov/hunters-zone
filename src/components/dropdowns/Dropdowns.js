@@ -1,13 +1,16 @@
 import styles from './Dropdowns.module.css';
+import { Link } from 'react-router-dom';
 
 
 function Dropdowns(props) {
+
+
 
     return (
         <>
             <div className={styles.container}>
                 <div className={styles.dropdown}>
-                    <a><i className='fa fa-user-plus'> Sign up</i></a>
+                    <Link to='/signup'><i className='fa fa-user-plus'> Sign up</i></Link>
                 </div>
                 <div className={styles.dropdown}>
                     <a><i className='fa fa-sign-in'> Login</i></a>

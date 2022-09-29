@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.dropdown a {
+    color: white;
+}
+
 .dropdown:hover {
     color: black;
     background: orange;

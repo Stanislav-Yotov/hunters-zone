@@ -21,7 +21,7 @@ function FindLocation() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: ""
+       
     })
 
     const center = {
