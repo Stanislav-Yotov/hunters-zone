@@ -4,12 +4,12 @@ function SignupForm(props) {
     return (
         <div className={styles.container}>
             <form className={styles.form}>
-                <label htmlFor='fullName'>Full name</label>
+                <label htmlFor='fullName'>User Name</label>
                 <input
                     type='text'
-                    id='fname'
-                    name='fullName'
-                    placeholder='Your full name'
+                    id='uname'
+                    name='userName'
+                    placeholder='Your username'
                     required />
 
                 <label htmlFor='email'>Email</label>
@@ -20,12 +20,27 @@ function SignupForm(props) {
                     placeholder='Your email adress'
                     required />
 
-                <label htmlFor='message'>Send me a message</label>
+                <label htmlFor='password'>Password</label>
+                <input
+                    type='password'
+                    id='password'
+                    name='password'
+                    placeholder='Your password'
+                    required />
+
+                <label htmlFor='confirmPassword'>Confirm Password</label>
+                <input
+                    type='password'
+                    id='confirmPassword'
+                    name='confirmPassword'
+                    placeholder='Confirm your password'
+                    required />
+                {/* <label htmlFor='message'>Send me a message</label>
                 <textarea
                     id="subject"
                     name="message"
                     placeholder="Type your message here"
-                    required />
+                    required /> */}
 
                 <input type="submit" value="Submit" />
             </form>
