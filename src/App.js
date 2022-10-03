@@ -9,7 +9,7 @@ function App() {
   return (
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/signup' element={<SignupForm />} />
+        <Route path='/signup' element={ <SignupForm />} />
       </Routes>
   );
 }

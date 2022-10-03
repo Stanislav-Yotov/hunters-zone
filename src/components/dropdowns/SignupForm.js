@@ -1,11 +1,16 @@
 import styles from './SignupForm.module.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
+
 
 function SignupForm(props) {
     const [usernamefield, setUsernameField] = useState('');
     const [emailfield, setEmailField] = useState('');
     const [passwordfield, setPasswordField] = useState('');
     const [confirmPasswordfield, setConfirmPasswordField] = useState('');
+    const [isSuccessul, setIsSuccessful] = useState(false);
+
+    const navigate = useNavigate();
 
     const usernameChangeHandler = (e) => {
         setUsernameField(e.target.value);
@@ -51,7 +56,8 @@ function SignupForm(props) {
         if (!userData.ok) {
             alert('Something went wrong!')
         } else {
-            alert('Registration sucessfull!')
+            alert('Registration sucessfull!');
+            navigate('/');
         }
         setUsernameField('');
         setEmailField('');
@@ -60,7 +66,7 @@ function SignupForm(props) {
 
     }
 
-    
+
 
     return (
         <div className={styles.container}>
