@@ -21,7 +21,7 @@ function FindLocation() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        
+      
     })
 
     const center = {
@@ -36,7 +36,7 @@ function FindLocation() {
         const bounds = new window.google.maps.LatLngBounds(center);
         map.fitBounds(bounds);
         setMap(map)
-    }, [lat, lng, map])
+    }, [lat, lng, map, center])
 
     const onUnmount = React.useCallback(function callback(map) {
         setMap(null)
